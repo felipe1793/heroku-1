@@ -7,19 +7,9 @@ app = Flask(__name__)
 @app.route('/')
 def nao_entre_em_panico():
 
-        n = 542
-        lista = []
-    for i in range(1, n+1):
-        divisores = 0
-        for div in range(1,i+1):
-            if i % div == 0:
-                divisores += 1
-                
-        if divisores == 2:
-            lista.append(i)
-            print(i)
+    primos = "testando"
 
-    return print(lista)
+    return primos
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
