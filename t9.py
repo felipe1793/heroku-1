@@ -19,7 +19,7 @@ def nao_entre_em_panico():
             lista.append(i)
             print(i)
 
-    return lista
+    return print(lista)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
