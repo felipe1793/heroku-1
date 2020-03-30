@@ -8,10 +8,12 @@ app = Flask(__name__)
 def nao_entre_em_panico():
 
 
-    primos = "Vai dar tudo certo segundo o amor da minha vida"
+    primos = 10
+    subrinho = 20
+    tia = primos + subrinho
 
 
-    return primos
+    return tia
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
