@@ -8,12 +8,27 @@ app = Flask(__name__)
 def nao_entre_em_panico():
 
 
-    primos = 10
-    subrinho = 20
-    tia = primos + subrinho
+    limite = 100
+    qtdPrimos = 2
+    numero = 3
+
+    primos = "1,2,"
+
+    while qtdPrimos < limite:
+        ehprimo = 1
+        for i in range(2, numero):
+            if numero % i == 0:
+                ehprimo = 0
+                break
+        if (ehprimo):
+            primos = primos + str(numero) + ","
+            qtdPrimos += 1
+            if (qtdPrimos % 10 == 0):
+                primos = primos + " -> " + str(qtdPrimos) + "<br>"
+        numero += 1
 
 
-    return tia
+    return primos
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
