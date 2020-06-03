@@ -1,6 +1,6 @@
 # heroku_devops
 
-hoje he aula de heroku 
+Primeira aula de Heroku
 
 git init
 git add .
